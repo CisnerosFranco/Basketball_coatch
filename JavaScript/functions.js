@@ -282,11 +282,10 @@ function getJugador(user, legajo) {
 }
 
 
-function mostrarTiros(){
+function mostrarTiros(usuario){
     let containerTiros = document.getElementById('container-tiros');
     let gridTiros = document.getElementById('body-tiros');
     let btnMostrar = document.querySelectorAll('.mostrar-tiros')
-    let usuario = getUsuario(usuarioActual);
     btnMostrar.forEach(btn => {
         btn.addEventListener('click', () => {
             containerTiros.classList.remove('d-none');
