@@ -1,0 +1,123 @@
+<div class="container-fluid p-0">
+    <header class="container-fluid encabezado shadow-sm b">
+        <div class="row p-1 justify-content-between  align-items-center pl-5 pr-5">
+            <div class=" align-items-center text-light overflow-hidden ">
+                <h2 class="pt-1">MISK UNIVERSITY</h2>
+            </div>
+            <div class="logo overflow-hidden">
+                <img src="images/nuclear-explosion.png" alt="" id="icon-user" class="logo-img mr-2 ">
+                <div class="btn-toggle" id="btn-toggle">
+                    <div>
+                        <span class="material-icons">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu shadow-sm" id="menu">
+                <ul>
+                    <li id="usuario-id">
+                        <span class="material-icons text-info ">
+                            person
+                        </span>
+                        <span id="nombre-user">nombre user</span>
+                    </li>
+                    <li id="exit">
+                        <span class="material-icons">
+                            exit_to_app
+                        </span>
+                        <span> exit</span>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <main id="main" class="container-fluid">
+        <div class="row hero text-center border-bottom justify-content-center p-5">
+            <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-3   btn btn-1 shadow-sm" id="btn-add-Jugador">Ingresar
+                Jugadores</div>
+            <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-3   btn btn-1 shadow-sm" id="btn-add-Tiro">Ingresar
+                Tiros
+            </div>
+        </div>
+        <div class="row pl-5 mb-3 pr-5" id="contain-jugadores">
+            <table class="table m-auto">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Legajo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tiros</th>
+                        <th scope="col">Eficiencia</th>
+                    </tr>
+                </thead>
+                <tbody class="text-muted" id="text-body">
+                
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3 mb-5 p-0 pt-5 pl-md-5 pr-md-5 d-none" id="container-tiros">
+            <table class="table border m-auto">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Lanzador</th>
+                        <th scope="col">Posición</th>
+                        <th scope="col">Metros</th>
+                        <th scope="col">Encesto</th>
+                    </tr>
+                </thead>
+                <tbody class="text-muted" id="body-tiros"></tbody>
+            </table>
+        </div>
+
+        <!--forms -->
+        <div class="form-add-container">
+            <form action="" method="" class="form ingresarJugador p-4 was-validated" id="form-add-jugador">
+                <header>
+                    <h2>Agregar Jugador</h2>
+                </header>
+                <input type="text" placeholder="Nombre del Jugador" name="" id="add-Jugador">
+                <input type="number" placeholder="Legajo" name="" id="add-Legajo">
+                <button type="submit" class="btn-submit bg-info mt-5">AGREGAR</button>
+            </form>
+        </div>
+        <div class="form-add-container">
+            <form action="" method="" class="form ingresarTiros" id="form-add-tiro">
+                <header>
+                    <h2>Agregar Tiros</h2>
+                </header>
+                <input type="number" placeholder="Legajo del Jugador" name="" id="legajoDelLanzador">
+                <input type="number" placeholder="Distancia en metros" name="" id="metros-tiro">
+                <div class="lanzamiento row w-100 justify-content-around">
+                    <select name="" id="posicion-lanzamiento" class="col-6  border">
+                        <option value="selecionar">Posicion</option>
+                        <option value="Base">Base</option>
+                        <option value="Escolta">Escolta</option>
+                        <option value="Alero">Alero</option>
+                        <option value="Ala-Pivot">Ala-Pivot</option>
+                        <option value="Pivot">Pivot</option>
+                    </select>
+                    <select name="" id="encesto-lanzamiento" class="col-4 border">
+                        <option value="selecionar">Encesto</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit  mt-4">AGREGAR</button>
+            </form>
+        </div>
+    </main>
+    <footer class="container-fluidw-100">
+        <div class="row m-auto pl-5">
+            <div class="col-12 mt-5">
+                <span>Desarrollo por Cisneros franco</span>
+            </div>
+            <div class="col-12 mt-2">
+                <span>23-08-2020</span>
+            </div>
+            <div class="col-12 mt-2">
+                <span>francomariano147@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+</div>

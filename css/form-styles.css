@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-container {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    
+}
+
+.form-container, .form-container .form .form-header, .form-container .form .btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #f8f8f8;
+    width: 350px;
+    height: 500px;
+    border-radius: 7px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.form .form-header {   
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.form-login .form-header , .form-login #login-pass{
+    margin-bottom: 15px;
+}
+
+.form .form-header img{
+    width: 100px;
+    margin: 10px 0;
+}
+
+.form input {
+    margin: 10px 0;
+    padding: 10px !important;
+    width: 300px !important;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.form #signin a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #024a97;
+}
+
+.form .btn-submit, .btn-submit:hover {
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 300px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+    box-shadow: #4444 0 3px 5px;
+}
+
+#btn-signin {
+    background: #5ad314;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+/*AGREGANDO JUGADORES*/
+main .form-add-container {
+    
+    height: 100vh;
+    width: 100vw;
+    background: rgba(104, 102, 102, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s linear all;
+    position: absolute;
+    transform: translateY(-800px);
+    
+}
+
+main .form-add-container .ingresarJugador, main .form-add-container .ingresarTiros {
+    height: 400px;
+    width: 330px;
+    border: 1px solid #ccc6;
+    background: rgb(247, 247, 247);
+    border-radius: 7px;
+    margin: 20px;
+
+}
+
+main .form-add-container .ingresarJugador header, main .form-add-container .ingresarTiros header {
+    color: #666;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .form-add-container select {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+main .descenderForm {
+    transform: translateY(0px) !important;
+}
+
