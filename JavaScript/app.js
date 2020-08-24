@@ -17,8 +17,6 @@
     })
 
 
-
-    //----------------------------------
     window.addEventListener("popstate", () => {
         let ubicacion = location.pathname.split('/')[1];
         let url = ubicacion + ".html"; // este contiene el url actual
@@ -33,7 +31,7 @@
                 }
                 else if (ubicacion === 'dashboard') {
                     dibujarUser(getUsuario(usuarioActual));
-                    mostrarTiros();
+                    mostrarTiros(getUsuario(usuarioActual));
                     dasboardInit();
                 }
             })
@@ -78,7 +76,7 @@
                         history.pushState(null, '', 'dashboard')
                         usuarioActual = loginUser.value.trim();
                         dibujarUser(getUsuario(usuarioActual));
-                        mostrarTiros();
+                        mostrarTiros(getUsuario(usuarioActual));
                         dasboardInit();
                     })
                     .catch(error => {
@@ -235,7 +233,7 @@
                 else {
                     agregarJugador(usuario, addJugador.value.trim(), legajoValor)
                     actualizarDB(usuario);
-                    mostrarTiros();
+                    mostrarTiros(getUsuario(usuarioActual));
                     addJugador.value = '';
                     addLegajo.value = '';
                 }
@@ -265,7 +263,7 @@
                     let jugador = getJugador(usuario, legajo);
                     agregarTiro(jugador, metrosTiro.value, posicionLanzador.value, encestoLanzamiento.value)
                     actualizarDB(usuario);
-                    mostrarTiros();
+                    mostrarTiros(getUsuario(usuarioActual));
                     legajoLanzador.value = '';
                     metrosTiro.value = '';
                     encestoLanzamiento.value = encestoLanzamiento.children[0].value;
@@ -276,5 +274,6 @@
     }
 
 })();
+
 
 
