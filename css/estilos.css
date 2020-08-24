@@ -16,6 +16,8 @@ body {
    background: #007894 !important;
 }
 
+
+
 .encabezado .logo .logo-img {
     height: 48px;
     position: absolute;
@@ -124,7 +126,8 @@ body {
 
 #main .fila-uno {
     height: 100%;
-    min-height: 80vh;  
+    min-height: 80vh;
+    padding-bottom: 10px;  
 }
 
 
@@ -138,19 +141,30 @@ body {
 }
 
 /* buttons*/
+
+main .hero {
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn {
     border: 1px solid #007894;
     background: none;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    margin: 40px;
+    
     transition: 0.8s;
 
     position: relative;
     overflow: hidden;
     color: #007894;
-    
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 2px !important;
     z-index: 100;
 }
